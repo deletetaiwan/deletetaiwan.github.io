@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YOUR BRAND | Official Store</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 7%;
+      border-bottom: 1px solid #333;
+    }
+
+    header h2 {
+      letter-spacing: 3px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 13px;
+    }
+
+    .hero {
+      min-height: 65vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(135deg, #222, #111);
+    }
+
+    .hero p {
+      color: #aaa;
+      letter-spacing: 4px;
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 9vw, 100px);
+      letter-spacing: -3px;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      background: white;
+      color: black;
+      padding: 15px 28px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    .products {
+      padding: 65px 7%;
+    }
+
+    .products h2 {
+      margin-bottom: 30px;
+      letter-spacing: 2px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .product img {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      background: #252525;
+      display: block;
+    }
+
+    .product h3 {
+      margin-top: 15px;
+      font-size: 16px;
+    }
+
+    .product p {
+      color: #aaa;
+      margin-top: 8px;
+    }
+
+    footer {
+      border-top: 1px solid #333;
+      padding: 30px 7%;
+      color: #999;
+      font-size: 13px;
+    }
+
+    @media (max-width: 650px) {
+      header {
+        padding: 20px 5%;
+      }
+
+      nav a {
+        margin-left: 10px;
+        font-size: 11px;
+      }
+
+      .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .hero h1 {
+        letter-spacing: -1px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h2>YOUR BRAND</h2>
+    <nav>
+      <a href="#shop">SHOP</a>
+      <a href="#about">ABOUT</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <p>INDEPENDENT STREETWEAR</p>
+    <h1>BUILT DIFFERENT.</h1>
+    <p>YOUR STYLE. YOUR RULES.</p>
+    <a class="button" href="#shop">EXPLORE THE DROP</a>
+  </section>
+
+  <section class="products" id="shop">
+    <h2>THE COLLECTION</h2>
+
+    <div class="grid">
+      <article class="product">
+        <img src="https://placehold.co/600x800/252525/ffffff?text=HOODIE"
+             alt="Oversized hoodie">
+        <h3>Oversized Hoodie</h3>
+        <p>£45.00</p>
+      </article>
+
+      <article class="product">
+        <img src="https://placehold.co/600x800/252525/ffffff?text=T-SHIRT"
+             alt="Graphic T-shirt">
+        <h3>Graphic T-Shirt</h3>
+        <p>£25.00</p>
+      </article>
+
+      <article class="product">
+        <img src="https://placehold.co/600x800/252525/ffffff?text=LONGSLEEVE"
+             alt="Graphic long-sleeve shirt">
+        <h3>Graphic Long Sleeve</h3>
+        <p>£30.00</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="products" id="about">
+    <h2>OUR STORY</h2>
+    <p>
+      Built for those who do things differently.
+      Independent designs, made to stand out.
+    </p>
+  </section>
+
+  <footer>
+    © 2026 YOUR BRAND. All rights reserved.
+  </footer>
+</body>
+</html>
